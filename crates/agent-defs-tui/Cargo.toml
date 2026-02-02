@@ -1,0 +1,16 @@
+[package]
+name = "agent-defs-tui"
+edition.workspace = true
+version.workspace = true
+
+[dependencies]
+agent-defs.workspace = true
+anyhow.workspace = true
+tokio.workspace = true
+ratatui.workspace = true
+ratatui-explorer.workspace = true
+crossterm.workspace = true
+futures.workspace = true
+
+[dev-dependencies]
+agent-defs = { workspace = true, features = ["test-support"] }

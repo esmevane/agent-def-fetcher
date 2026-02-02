@@ -1,0 +1,16 @@
+[package]
+name = "agent-defs-store"
+edition.workspace = true
+version.workspace = true
+
+[dependencies]
+agent-defs.workspace = true
+async-trait.workspace = true
+rusqlite = { workspace = true, features = ["bundled"] }
+rusqlite_migration.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+async-trait.workspace = true
+tokio.workspace = true
