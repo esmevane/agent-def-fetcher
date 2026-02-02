@@ -1,0 +1,109 @@
+{
+  "sha": "abc123",
+  "url": "https://api.github.com/repos/test-owner/test-repo/git/trees/abc123",
+  "tree": [
+    {
+      "path": "cli-tool",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "aaa111"
+    },
+    {
+      "path": "cli-tool/components",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "aaa222"
+    },
+    {
+      "path": "cli-tool/components/agents",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "aaa333"
+    },
+    {
+      "path": "cli-tool/components/agents/development-team/code-architect.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbb111",
+      "size": 5000
+    },
+    {
+      "path": "cli-tool/components/agents/development-team/test-runner.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbb222",
+      "size": 3000
+    },
+    {
+      "path": "cli-tool/components/agents/ai-specialists/prompt-engineer.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbb333",
+      "size": 4000
+    },
+    {
+      "path": "cli-tool/components/hooks/pre-commit-lint.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbb444",
+      "size": 2000
+    },
+    {
+      "path": "cli-tool/components/commands/deploy.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbb555",
+      "size": 1500
+    },
+    {
+      "path": "cli-tool/components/.claude-plugin/marketplace.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbb666",
+      "size": 800
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ccc111",
+      "size": 500
+    },
+    {
+      "path": "cli-tool/components/agents/development-team/data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbb777",
+      "size": 600
+    },
+    {
+      "path": "cli-tool/components/skills/ai-research/agents-crewai/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ddd111",
+      "size": 2500
+    },
+    {
+      "path": "cli-tool/components/skills/ai-research/agents-crewai/references/crew-setup.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ddd222",
+      "size": 1200
+    },
+    {
+      "path": "cli-tool/components/skills/code-quality/linting-setup/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ddd333",
+      "size": 1800
+    },
+    {
+      "path": "cli-tool/components/skills/code-quality/linting-setup/references/eslint-config.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ddd444",
+      "size": 900
+    }
+  ],
+  "truncated": false
+}

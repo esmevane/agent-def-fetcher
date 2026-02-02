@@ -1,0 +1,17 @@
+[package]
+name = "agent-defs"
+edition.workspace = true
+version.workspace = true
+
+[features]
+test-support = []
+
+[dependencies]
+async-trait.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+serde_yaml_ng.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+tokio.workspace = true

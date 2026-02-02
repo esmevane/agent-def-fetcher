@@ -1,0 +1,14 @@
+{
+  "sha": "abc456",
+  "url": "https://api.github.com/repos/test-owner/test-repo/git/trees/abc456",
+  "tree": [
+    {
+      "path": "cli-tool/components/agents/development-team/code-architect.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbb111",
+      "size": 5000
+    }
+  ],
+  "truncated": true
+}
