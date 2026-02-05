@@ -10,16 +10,19 @@ repository = "https://github.com/esmevane/agent-def-fetcher"
 [workspace.dependencies]
 agent-defs = { path = "crates/agent-defs" }
 agent-defs-github = { path = "crates/agent-defs-github" }
+agent-defs-gpui = { path = "crates/agent-defs-gpui" }
 agent-defs-store = { path = "crates/agent-defs-store" }
 agent-defs-tui = { path = "crates/agent-defs-tui" }
 anyhow = "1"
 async-trait = "0.1"
 base64 = "0.22"
 clap = { version = "4.5", features = ["derive"] }
+core-text = "=21.0.0"
 crossterm = { version = "0.28", features = ["event-stream"] }
 dirs = "6.0"
 flate2 = "1.1"
 futures = "0.3"
+gpui = "0.2.2"
 ratatui = "0.29"
 ratatui-explorer = "0.2"
 reqwest = { version = "0.13", features = ["json"] }
@@ -60,6 +63,22 @@ targets = [
 install-path = "CARGO_HOME"
 # Whether to install an updater program
 install-updater = false
+
+# Build macOS .app bundle as DMG (only produces output on macOS runners)
+[[workspace.metadata.dist.extra-artifacts]]
+artifacts = ["Agent-Defs-Browser-macos-universal.dmg"]
+build = ["./scripts/build-macos-dmg.sh"]
+# Only build on macOS targets
+targets = ["aarch64-apple-darwin", "x86_64-apple-darwin"]
+
+# Pin core-* crates to commit b10f1ef to avoid version conflicts with gpui/zed-font-kit
+# This commit has core-text 21.0.0 + core-graphics 0.24.0 + core-foundation 0.10.0
+# See: https://github.com/zed-industries/zed/issues/47168
+[patch.crates-io]
+core-foundation = { git = "https://github.com/servo/core-foundation-rs", rev = "b10f1ef" }
+core-foundation-sys = { git = "https://github.com/servo/core-foundation-rs", rev = "b10f1ef" }
+core-graphics = { git = "https://github.com/servo/core-foundation-rs", rev = "b10f1ef" }
+core-text = { git = "https://github.com/servo/core-foundation-rs", rev = "b10f1ef" }
 
 # The profile that 'cargo dist' will build with
 [profile.dist]

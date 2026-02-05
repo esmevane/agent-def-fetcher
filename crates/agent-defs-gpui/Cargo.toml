@@ -1,0 +1,27 @@
+[package]
+name = "agent-defs-gpui"
+version.workspace = true
+edition.workspace = true
+
+[package.metadata.bundle]
+name = "Agent Defs Browser"
+identifier = "com.esmevane.agent-defs-browser"
+short_description = "Browse and install agent definitions"
+category = "Developer Tool"
+icon = ["icons/AppIcon.icns"]
+
+[package.metadata.bundle.macos]
+minimum_system_version = "12.0"
+
+[[bin]]
+name = "agent-defs-gui"
+path = "src/main.rs"
+
+[dependencies]
+agent-defs.workspace = true
+agent-defs-github.workspace = true
+agent-defs-store.workspace = true
+anyhow.workspace = true
+dirs.workspace = true
+gpui.workspace = true
+tokio.workspace = true
