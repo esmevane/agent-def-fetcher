@@ -48,6 +48,8 @@ wiremock = "0.6"
 cargo-dist-version = "0.30.3"
 # CI backends to support
 ci = "github"
+# Custom build setup for installing system dependencies (GPUI needs X11 libs on Linux)
+github-build-setup = "../build-setup.yml"
 # Where to host releases
 hosting = "github"
 # The installers to generate for each app

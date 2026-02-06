@@ -1,0 +1,5 @@
+- name: Install Linux dependencies for GPUI
+  if: runner.os == 'Linux'
+  run: |
+    sudo apt-get update
+    sudo apt-get install -y libxkbcommon-dev libxkbcommon-x11-dev
