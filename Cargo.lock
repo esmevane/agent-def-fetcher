@@ -22,7 +22,7 @@ dependencies = [
 
 [[package]]
 name = "agent-defs"
-version = "0.1.2"
+version = "0.1.3"
 dependencies = [
  "async-trait",
  "serde",
@@ -34,7 +34,7 @@ dependencies = [
 
 [[package]]
 name = "agent-defs-cli"
-version = "0.1.2"
+version = "0.1.3"
 dependencies = [
  "agent-defs",
  "agent-defs-github",
@@ -54,7 +54,7 @@ dependencies = [
 
 [[package]]
 name = "agent-defs-github"
-version = "0.1.2"
+version = "0.1.3"
 dependencies = [
  "agent-defs",
  "async-trait",
@@ -69,7 +69,7 @@ dependencies = [
 
 [[package]]
 name = "agent-defs-gpui"
-version = "0.1.2"
+version = "0.1.3"
 dependencies = [
  "agent-defs",
  "agent-defs-github",
@@ -82,7 +82,7 @@ dependencies = [
 
 [[package]]
 name = "agent-defs-store"
-version = "0.1.2"
+version = "0.1.3"
 dependencies = [
  "agent-defs",
  "async-trait",
@@ -95,7 +95,7 @@ dependencies = [
 
 [[package]]
 name = "agent-defs-tui"
-version = "0.1.2"
+version = "0.1.3"
 dependencies = [
  "agent-defs",
  "anyhow",
